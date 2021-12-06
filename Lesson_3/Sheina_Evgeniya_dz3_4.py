@@ -1,8 +1,8 @@
 import random
-joke = []
-nouns = random.choice(["автомобиль", "лес", "огонь", "город", "дом"])
-adverbs = random.choice(["сегодня", "вчера", "завтра", "позавчера", "ночью"])
-adjectives = random.choice(["веселый", "яркий", "зеленый", "утопичный", "мягкий"])
-for word in nouns, adverbs, adjectives:
-    joke.append(f'{nouns} {adverbs} {adjectives}')
-print(joke)
+n = int(input('Введите количество шуток: '))
+
+nouns = ["автомобиль", "лес", "огонь", "город", "дом"]
+adverbs = ["сегодня", "вчера", "завтра", "позавчера", "ночью"]
+adjectives = ["веселый", "яркий", "зеленый", "утопичный", "мягкий"]
+for word in range(n):
+    print(random.choice(nouns), random.choice(adverbs), random.choice(adjectives))
